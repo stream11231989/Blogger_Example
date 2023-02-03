@@ -1,0 +1,15 @@
+﻿@{ 
+    ViewBag.Title = "Email驗證";
+}
+
+@*標題*@
+<div class="page-header">
+    <h1>信箱驗證</h1>
+</div>
+@*顯示驗證結果*@
+<div  class="alert alert-info" >
+    @ViewData["EmailValidate"]
+</div>
+@*顯示登入與註冊連結*@
+@Html.ActionLink("去登入","Login")  |
+@Html.ActionLink("再註冊","Register")
